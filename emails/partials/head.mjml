@@ -1,0 +1,73 @@
+<mj-preview>{{preheader}}</mj-preview>
+<mj-font
+  name="Inter"
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap"
+/>
+<mj-attributes>
+  <mj-all font-family="Inter, Arial, Helvetica, sans-serif" color="#161712" />
+  <mj-text font-size="16px" line-height="26px" padding="0" />
+  <mj-button
+    background-color="#0056A4"
+    color="#FFFFFF"
+    border-radius="6px"
+    font-size="15px"
+    font-weight="700"
+    inner-padding="14px 24px"
+    padding="0"
+  />
+  <mj-section padding="0 40px" />
+</mj-attributes>
+<mj-style inline="inline">
+  .eyebrow div {
+    color: #0056a4 !important;
+    font-size: 11px !important;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+  }
+  .headline div {
+    color: #1f3c7a !important;
+    font-family: Inter, Arial, Helvetica, sans-serif !important;
+    font-size: 38px !important;
+    font-weight: 400;
+    letter-spacing: -0.7px;
+    line-height: 44px !important;
+  }
+  .body-copy div {
+    color: #4b4648 !important;
+  }
+  .fine-print div {
+    color: #7a7475 !important;
+    font-size: 12px !important;
+    line-height: 19px !important;
+  }
+  .detail-label div {
+    color: #7a7475 !important;
+    font-size: 11px !important;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .detail-value div {
+    color: #161712 !important;
+    font-size: 15px !important;
+    font-weight: 700;
+  }
+  .link-fallback div {
+    color: #0056a4 !important;
+    font-size: 12px !important;
+    line-height: 18px !important;
+    word-break: break-all;
+  }
+</mj-style>
+<mj-style>
+  @media only screen and (max-width: 480px) {
+    .headline div {
+      font-size: 31px !important;
+      line-height: 37px !important;
+    }
+    .mobile-center div {
+      text-align: center !important;
+    }
+  }
+</mj-style>

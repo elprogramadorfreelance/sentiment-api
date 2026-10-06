@@ -1,0 +1,33 @@
+<mjml lang="es">
+  <mj-head>
+    <mj-title>Tu cuenta de Unicornio fue eliminada</mj-title>
+    <mj-include path="../partials/head.mjml" />
+  </mj-head>
+  <mj-body background-color="#F5F5F5" width="640px">
+    <mj-wrapper background-color="#FFFFFF" padding="0">
+      <mj-include path="../partials/header.mjml" />
+      <mj-section padding-top="40px">
+        <mj-column>
+          <mj-image align="left" alt="Icono de eliminación de cuenta" src="https://placehold.co/128x128/FDECEC/DC2626.png?text=ICONO" width="64px" padding="0 0 24px" />
+          <mj-text css-class="eyebrow">Confirmación de tu solicitud</mj-text>
+          <mj-text css-class="headline" padding-top="12px"> Tu cuenta ya fue eliminada. </mj-text>
+          <mj-text css-class="body-copy" padding-top="18px"> Hola, {{name}}. Atendimos tu solicitud y eliminamos la cuenta asociada a {{recipient_email}} el {{deletion_date}}. A partir de ahora, ya no será posible acceder a tus proyectos ni datos. </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section padding-top="28px">
+        <mj-column background-color="#FBFBFB" border="1px solid #D5CED0" border-radius="8px" padding="22px 24px">
+          <mj-text css-class="detail-label">Referencia</mj-text>
+          <mj-text css-class="detail-value" padding-top="6px">{{request_id}}</mj-text>
+          <mj-text css-class="fine-print" padding-top="12px"> Solo conservaremos la información necesaria para cumplir con nuestras obligaciones legales, de acuerdo con el aviso de privacidad. </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section padding-top="28px">
+        <mj-column>
+          <mj-text css-class="body-copy"> Si no solicitaste esta eliminación o necesitas aclarar algo, estamos aquí para ayudarte. Escríbenos y revisaremos el caso contigo. </mj-text>
+          <mj-button href="{{support_url}}" align="left" padding-top="20px">Hablar con soporte</mj-button>
+        </mj-column>
+      </mj-section>
+      <mj-include path="../partials/footer.mjml" />
+    </mj-wrapper>
+  </mj-body>
+</mjml>

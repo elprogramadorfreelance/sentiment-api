@@ -1,0 +1,55 @@
+<mjml lang="es">
+  <mj-head>
+    <mj-title>Te damos la bienvenida a Unicornio</mj-title>
+    <mj-include path="../partials/head.mjml" />
+  </mj-head>
+  <mj-body background-color="#F5F5F5" width="640px">
+    <mj-wrapper background-color="#FFFFFF" padding="0">
+      <mj-include path="../partials/header.mjml" />
+      <mj-section padding-top="40px">
+        <mj-column>
+          <mj-text css-class="eyebrow">Todo listo para comenzar</mj-text>
+          <mj-text css-class="headline" padding-top="12px">
+            Qué gusto tenerte aquí, {{first_name}}.
+          </mj-text>
+          <mj-text css-class="body-copy" padding-top="18px">
+            Tu espacio en Unicornio ya está listo. Desde aquí podrás seguir las
+            conversaciones que importan para {{project_name}} y entenderlas con mayor
+            claridad. Nuestro equipo preparó tus datos de acceso para que puedas comenzar.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section padding-top="28px">
+        <mj-column>
+          <mj-image
+            alt="Panel de métricas de Unicornio"
+            border-radius="8px"
+            fluid-on-mobile="true"
+            src="https://placehold.co/1120x480/0056A4/FFFFFF.png?text=IMAGEN+STOCK+%2F+DASHBOARD"
+            padding="0"
+          />
+        </mj-column>
+      </mj-section>
+      <mj-section padding-top="28px" padding-bottom="4px">
+        <mj-column width="50%">
+          <mj-text css-class="detail-label">01 · Personaliza</mj-text>
+          <mj-text css-class="body-copy" padding-top="8px">
+            Revisa las palabras clave y fuentes que quieres seguir.
+          </mj-text>
+        </mj-column>
+        <mj-column width="50%">
+          <mj-text css-class="detail-label">02 · Descubre</mj-text>
+          <mj-text css-class="body-copy" padding-top="8px">
+            Encuentra menciones, cambios de sentimiento y tendencias en un solo lugar.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section padding-top="24px">
+        <mj-column>
+          <mj-button href="{{login_url}}" align="left">Ir a mi espacio</mj-button>
+        </mj-column>
+      </mj-section>
+      <mj-include path="../partials/footer.mjml" />
+    </mj-wrapper>
+  </mj-body>
+</mjml>

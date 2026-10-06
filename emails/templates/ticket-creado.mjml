@@ -1,0 +1,61 @@
+<mjml lang="es">
+  <mj-head>
+    <mj-title>Recibimos tu solicitud de soporte</mj-title>
+    <mj-include path="../partials/head.mjml" />
+  </mj-head>
+  <mj-body background-color="#F5F5F5" width="640px">
+    <mj-wrapper background-color="#FFFFFF" padding="0">
+      <mj-include path="../partials/header.mjml" />
+      <mj-section padding-top="40px">
+        <mj-column>
+          <mj-image
+            align="left"
+            alt="Solicitud recibida"
+            src="https://placehold.co/128x128/EAF7FB/0056A4.png?text=OK"
+            width="64px"
+            padding="0 0 24px"
+          />
+          <mj-text css-class="eyebrow">Ticket generado</mj-text>
+          <mj-text css-class="headline" padding-top="12px">
+            Ya estamos revisando tu solicitud.
+          </mj-text>
+          <mj-text css-class="body-copy" padding-top="18px">
+            Hola, {{first_name}}. Recibimos tu mensaje y generamos un ticket para que
+            nuestro equipo pueda darle seguimiento. Te responderemos a la brevedad en
+            este mismo correo.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section padding-top="28px">
+        <mj-column
+          background-color="#FBFBFB"
+          border="1px solid #D5CED0"
+          border-radius="8px"
+          padding="24px"
+        >
+          <mj-text css-class="detail-label">Número de ticket</mj-text>
+          <mj-text css-class="detail-value" padding-top="7px">{{ticket_id}}</mj-text>
+          <mj-divider border-color="#D5CED0" border-width="1px" padding="18px 0" />
+          <mj-text css-class="detail-label">Asunto</mj-text>
+          <mj-text css-class="body-copy" padding-top="7px">{{ticket_subject}}</mj-text>
+          <mj-text css-class="detail-label" padding-top="18px">Fecha de recepción</mj-text>
+          <mj-text css-class="body-copy" padding-top="7px">
+            {{created_date}} · {{created_time}}
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section padding-top="28px">
+        <mj-column>
+          <mj-text css-class="body-copy">
+            No necesitas enviar otra solicitud. Si deseas agregar información, responde
+            directamente a este correo y la incluiremos en el mismo ticket.
+          </mj-text>
+          <mj-text css-class="fine-print" padding-top="16px">
+            Conserva el número {{ticket_id}} para futuras consultas.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-include path="../partials/footer.mjml" />
+    </mj-wrapper>
+  </mj-body>
+</mjml>

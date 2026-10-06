@@ -1,0 +1,52 @@
+<mjml lang="es">
+  <mj-head>
+    <mj-title>Confirma tu nuevo correo en Unicornio</mj-title>
+    <mj-include path="../partials/head.mjml" />
+  </mj-head>
+  <mj-body background-color="#F5F5F5" width="640px">
+    <mj-wrapper background-color="#FFFFFF" padding="0">
+      <mj-include path="../partials/header.mjml" />
+      <mj-section padding-top="40px">
+        <mj-column>
+          <mj-text css-class="eyebrow">Mantén tus datos al día</mj-text>
+          <mj-text css-class="headline" padding-top="12px">
+            Solo falta confirmar tu nuevo correo.
+          </mj-text>
+          <mj-text css-class="body-copy" padding-top="18px">
+            Hola, {{name}}. Recibimos tu solicitud para cambiar el correo con el que
+            ingresas a Unicornio. Revisa que ambas direcciones sean correctas y confirma
+            el cambio cuando estés listo.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section padding-top="28px">
+        <mj-column width="46%">
+          <mj-text css-class="detail-label">Correo anterior</mj-text>
+          <mj-text css-class="detail-value" padding-top="7px">{{old_email}}</mj-text>
+        </mj-column>
+        <mj-column width="8%">
+          <mj-image
+            alt="Cambio de correo"
+            src="https://placehold.co/64x64/EAF7FB/0056A4.png?text=%E2%86%92"
+            width="32px"
+            padding="2px 0 16px"
+          />
+        </mj-column>
+        <mj-column width="46%">
+          <mj-text css-class="detail-label">Correo nuevo</mj-text>
+          <mj-text css-class="detail-value" padding-top="7px">{{new_email}}</mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section padding-top="28px">
+        <mj-column>
+          <mj-button href="{{confirm_email_url}}" align="left">Confirmar mi nuevo correo</mj-button>
+          <mj-text css-class="fine-print" padding-top="18px">
+            Tu correo actual seguirá funcionando hasta que confirmes el cambio. Para
+            cuidar tu cuenta, este enlace vence el {{expiration_date}}.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-include path="../partials/footer.mjml" />
+    </mj-wrapper>
+  </mj-body>
+</mjml>

@@ -1,0 +1,32 @@
+{
+  "name": "sentiment-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "emails:build": "mjml -r \"emails/templates/*.mjml\" -o emails/dist --config.allowIncludes true --config.includePath \"emails/partials\"",
+    "emails:validate": "mjml -v \"emails/templates/*.mjml\" --config.allowIncludes true --config.includePath \"emails/partials\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "mjml": "^5.4.0"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.5.2",
+    "googleapis": "^176.0.0",
+    "node-cron": "^3.0.3",
+    "nodemailer": "^9.0.3",
+    "openai": "^6.39.0",
+    "pdfkit": "^0.15.0",
+    "pg": "^8.13.0",
+    "rss-parser": "^3.13.0"
+  }
+}

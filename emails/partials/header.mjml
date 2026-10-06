@@ -1,0 +1,22 @@
+<mj-section background-color="#FFFFFF" padding-top="28px" padding-bottom="24px">
+  <mj-column width="68%">
+    <mj-image
+      align="left"
+      alt="Logotipo de Unicornio"
+      href="{{site_url}}"
+      src="{{assets_url}}/unicornio-mail.svg"
+      width="168px"
+      padding="0"
+    />
+  </mj-column>
+  <mj-column width="32%">
+    <mj-text align="right" css-class="eyebrow mobile-center">
+      Sentiment Unicornio
+    </mj-text>
+  </mj-column>
+</mj-section>
+<mj-section padding="0 40px">
+  <mj-column>
+    <mj-divider border-width="1px" border-color="#D5CED0" padding="0" />
+  </mj-column>
+</mj-section>

@@ -1,0 +1,74 @@
+<mjml lang="es">
+  <mj-head>
+    <mj-title>Nos vemos en tu sesión de Unicornio</mj-title>
+    <mj-include path="../partials/head.mjml" />
+  </mj-head>
+  <mj-body background-color="#F5F5F5" width="640px">
+    <mj-wrapper background-color="#FFFFFF" padding="0">
+      <mj-include path="../partials/header.mjml" />
+      <mj-section padding-top="40px">
+        <mj-column>
+          <mj-text css-class="eyebrow">Tu reunión está confirmada</mj-text>
+          <mj-text css-class="headline" padding-top="12px">
+            Gracias por reservar este espacio con nosotros.
+          </mj-text>
+          <mj-text css-class="body-copy" padding-top="18px">
+            Hola, {{first_name}}. Nos dará mucho gusto conversar contigo. En esta sesión
+            conocerás cómo Unicornio te ayuda a convertir menciones, tendencias y señales
+            de riesgo en información clara para tomar mejores decisiones.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section padding-top="28px">
+        <mj-column background-color="#EAF7FB" border-radius="8px" padding="26px 24px">
+          <mj-text
+            color="#0056A4"
+            font-size="11px"
+            font-weight="700"
+            letter-spacing="1.4px"
+            text-transform="uppercase"
+          >
+            Información de la reunión
+          </mj-text>
+          <mj-divider border-color="#A9E2F2" border-width="1px" padding="18px 0" />
+          <mj-table cellpadding="0" cellspacing="0">
+            <tr>
+              <td style="color: #7a7475; font-size: 12px; padding: 0 12px 14px 0; width: 32%;">
+                Fecha
+              </td>
+              <td style="color: #161712; font-size: 15px; font-weight: 700; padding: 0 0 14px;">
+                {{meeting_date}}
+              </td>
+            </tr>
+            <tr>
+              <td style="color: #7a7475; font-size: 12px; padding: 0 12px 14px 0;">
+                Hora
+              </td>
+              <td style="color: #161712; font-size: 15px; font-weight: 700; padding: 0 0 14px;">
+                {{meeting_time}} · {{timezone}}
+              </td>
+            </tr>
+            <tr>
+              <td style="color: #7a7475; font-size: 12px; padding: 0 12px 0 0;">
+                Ubicación
+              </td>
+              <td style="color: #161712; font-size: 15px; font-weight: 700;">
+                Online · Google Meet
+              </td>
+            </tr>
+          </mj-table>
+        </mj-column>
+      </mj-section>
+      <mj-section padding-top="28px">
+        <mj-column>
+          <mj-button href="{{meeting_url}}" align="left">Entrar a mi reunión</mj-button>
+          <mj-text css-class="fine-print" padding-top="18px">
+            Cuando llegue el momento, usa este botón para conectarte. Si puedes, entra
+            cinco minutos antes para revisar tu cámara y micrófono con tranquilidad.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-include path="../partials/footer.mjml" />
+    </mj-wrapper>
+  </mj-body>
+</mjml>

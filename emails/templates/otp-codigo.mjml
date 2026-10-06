@@ -1,0 +1,45 @@
+<mjml lang="es">
+  <mj-head>
+    <mj-title>Tu código de verificación de Unicornio</mj-title>
+    <mj-include path="../partials/head.mjml" />
+  </mj-head>
+  <mj-body background-color="#F5F5F5" width="640px">
+    <mj-wrapper background-color="#FFFFFF" padding="0">
+      <mj-include path="../partials/header.mjml" />
+      <mj-section padding-top="40px">
+        <mj-column>
+          <mj-text css-class="eyebrow">Verifica que eres tú</mj-text>
+          <mj-text css-class="headline" padding-top="12px">
+            Este código autoriza {{motivo}}.
+          </mj-text>
+          <mj-text css-class="body-copy" padding-top="18px">
+            Hola, {{first_name}}. Usa este código en Unicornio para continuar. Por tu
+            seguridad, nunca lo compartas con nadie.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section padding-top="24px">
+        <mj-column background-color="#EAF7FB" border-radius="8px" padding="26px 24px">
+          <mj-text
+            align="center"
+            color="#0056A4"
+            font-size="40px"
+            font-weight="700"
+            letter-spacing="10px"
+          >
+            {{codigo}}
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section padding-top="24px">
+        <mj-column>
+          <mj-text css-class="fine-print">
+            Este código vence en {{expiration_minutes}} minutos. Si no fuiste tú quien lo
+            solicitó, puedes ignorar este correo con tranquilidad — tu cuenta sigue segura.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-include path="../partials/footer.mjml" />
+    </mj-wrapper>
+  </mj-body>
+</mjml>

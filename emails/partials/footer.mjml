@@ -1,0 +1,14 @@
+<mj-section padding-top="32px" padding-bottom="12px">
+  <mj-column>
+    <mj-divider border-width="1px" border-color="#D5CED0" padding="0 0 22px" />
+    <mj-text align="center" css-class="fine-print">
+      Unicornio · Monitoreo de reputación y sentimiento
+      <br />
+      <a href="{{site_url}}" style="color: #0056a4; text-decoration: none;">Sitio web</a>
+      &nbsp;·&nbsp;
+      <a href="{{privacy_url}}" style="color: #0056a4; text-decoration: none;">Privacidad</a>
+      &nbsp;·&nbsp;
+      <a href="{{support_url}}" style="color: #0056a4; text-decoration: none;">Soporte</a>
+    </mj-text>
+  </mj-column>
+</mj-section>

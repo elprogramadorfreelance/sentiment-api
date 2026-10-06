@@ -1,0 +1,43 @@
+<mjml lang="es">
+  <mj-head>
+    <mj-title>Revisa la transferencia de tu cuenta</mj-title>
+    <mj-include path="../partials/head.mjml" />
+  </mj-head>
+  <mj-body background-color="#F5F5F5" width="640px">
+    <mj-wrapper background-color="#FFFFFF" padding="0">
+      <mj-include path="../partials/header.mjml" />
+      <mj-section padding-top="40px">
+        <mj-column>
+          <mj-text css-class="eyebrow">Cambio de responsable</mj-text>
+          <mj-text css-class="headline" padding-top="12px"> Te acompañamos en esta transición. </mj-text>
+          <mj-text css-class="body-copy" padding-top="18px"> Hola, {{first_name}}. Recibimos una solicitud para transferir tus proyectos y datos a una nueva persona responsable. Antes de continuar, revisa con calma que la información sea correcta. </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section padding-top="28px">
+        <mj-column width="46%">
+          <mj-text css-class="detail-label">Cuenta actual</mj-text>
+          <mj-text css-class="detail-value" padding-top="7px">{{current_email}}</mj-text>
+        </mj-column>
+        <mj-column width="8%">
+          <mj-image alt="Transferencia" src="https://placehold.co/64x64/EAF7FB/0056A4.png?text=%E2%86%92" width="32px" padding="2px 0 16px" />
+        </mj-column>
+        <mj-column width="46%">
+          <mj-text css-class="detail-label">Nueva cuenta</mj-text>
+          <mj-text css-class="detail-value" padding-top="7px">{{new_owner_email}}</mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section padding-top="24px">
+        <mj-column background-color="#EAF7FB" border-radius="8px" padding="22px 24px">
+          <mj-text color="#1F3C7A" font-size="14px" line-height="22px"> Cuando confirmes, la nueva persona responsable podrá acceder a {{project_count}} proyectos. Tu cuenta permanecerá activa y no se eliminará automáticamente. </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section padding-top="28px">
+        <mj-column>
+          <mj-button href="{{transfer_url}}" align="left">Revisar y confirmar</mj-button>
+          <mj-text css-class="fine-print" padding-top="18px"> Para cuidar tu información, este enlace estará disponible hasta el {{expiration_date}}. </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-include path="../partials/footer.mjml" />
+    </mj-wrapper>
+  </mj-body>
+</mjml>

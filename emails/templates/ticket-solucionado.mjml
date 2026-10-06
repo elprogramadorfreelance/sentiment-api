@@ -1,0 +1,59 @@
+<mjml lang="es">
+  <mj-head>
+    <mj-title>Tu solicitud de soporte fue solucionada</mj-title>
+    <mj-include path="../partials/head.mjml" />
+  </mj-head>
+  <mj-body background-color="#F5F5F5" width="640px">
+    <mj-wrapper background-color="#FFFFFF" padding="0">
+      <mj-include path="../partials/header.mjml" />
+      <mj-section padding-top="40px">
+        <mj-column>
+          <mj-image
+            align="left"
+            alt="Solicitud solucionada"
+            src="https://placehold.co/128x128/E9F8EE/16A34A.png?text=OK"
+            width="64px"
+            padding="0 0 24px"
+          />
+          <mj-text css-class="eyebrow">Ticket solucionado</mj-text>
+          <mj-text css-class="headline" padding-top="12px">
+            Tu solicitud quedó resuelta.
+          </mj-text>
+          <mj-text css-class="body-copy" padding-top="18px">
+            Hola, {{first_name}}. Nuestro equipo terminó de revisar tu solicitud y marcó
+            el ticket {{ticket_id}} como solucionado. Esperamos que todo haya quedado
+            claro y funcionando como esperabas.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section padding-top="28px">
+        <mj-column background-color="#E9F8EE" border-radius="8px" padding="24px">
+          <mj-text css-class="detail-label">Solución aplicada</mj-text>
+          <mj-text color="#1F3C7A" font-size="15px" line-height="24px" padding-top="8px">
+            {{resolution_summary}}
+          </mj-text>
+          <mj-divider border-color="#BFE5CA" border-width="1px" padding="18px 0" />
+          <mj-text css-class="detail-label">Fecha de solución</mj-text>
+          <mj-text css-class="detail-value" padding-top="7px">
+            {{resolved_date}} · {{resolved_time}}
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section padding-top="28px">
+        <mj-column>
+          <mj-text css-class="body-copy">
+            Si el problema continúa o necesitas ayuda con algo más, cuéntanos. Puedes
+            responder a este correo y retomaremos la conversación contigo.
+          </mj-text>
+          <mj-button href="{{support_url}}" align="left" padding-top="20px">
+            Necesito más ayuda
+          </mj-button>
+          <mj-text css-class="fine-print" padding-top="18px">
+            Referencia: {{ticket_id}}
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-include path="../partials/footer.mjml" />
+    </mj-wrapper>
+  </mj-body>
+</mjml>
